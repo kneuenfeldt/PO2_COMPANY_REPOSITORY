@@ -76,7 +76,7 @@ h2.aboutContent {
   flex-basis: 100%;
   font-family: 'Montserrat';
   font-weight: normal;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   max-width: 1200px;
 }
 
@@ -87,11 +87,32 @@ h2.aboutContent {
     padding-bottom: 40px;
 }
 
+.imageContainer2 {
+    position: relative;
+    text-align: left;
+    color: white;
+    padding-bottom: 40px;
+}
+
 h2.artistText {
   position: absolute;
   bottom: 120px;
   left: 60px;
 }
+
+h1.artistText1 {
+  position: absolute;
+  top: 120px;
+  left: 150px;
+}
+
+h2.artistText2 {
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  font-size: 18px;
+}
+
 
 p.artistSubtext {
   position: absolute;
@@ -116,11 +137,30 @@ p.artistSubtext {
   transition: ease-out 0.4s;
 }
 
+.aboutButton2{
+  position: absolute;
+  bottom:300px;
+  left: 150px;
+  background-color: #ffffff;
+  color: #5e5e5e;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  border: 2px solid #5e5e5e;
+  box-shadow: inset 0 0 0 0 #5e5e5e;
+  padding:1em;
+  width: 120px;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
 .aboutButton:hover{
   box-shadow: inset 120px 0 0 0 #5e5e5e;
   text-decoration: none;
   color: white;
 }
+
+
 
 .carousel-item {
   height: 100vh;
