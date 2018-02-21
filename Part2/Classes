@@ -143,8 +143,10 @@
   <!-- Footer -->
    <footer>
 
-      <p><a href="">RESOURCES<a/> | <a href="http://www.sfu.ca/~kneuenfe/IAT_339/PO2/Style_Guide_P02/">STYLE GUIDE</a> | <a href="">GITHUB REPOSITORY</a></p>
+      <p>RESOURCES | STYLE GUIDE | GITHUB REPOSITORY</p>
 
+
+    <!-- /.container -->
   </footer>
 
 
