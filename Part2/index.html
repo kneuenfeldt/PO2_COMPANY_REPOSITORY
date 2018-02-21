@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>P01 Style Guide</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:1,100,200,300,400,500,600,800" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+  <!--Navigation-->
+  <nav>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <a href="google.ca">
+      <img id = "location" src="img/location_icon.png" alt="HTML tutorial" width ="24" height ="24">
+    </a>
+  </nav>
+
+  <!--Drop Down Menu Elements -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a id = "fadein1" href="#">Events</a>
+      <a href="#">Classes</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <!-- Carousel -->
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('img/test1.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class = "carouselheader">First Slide</h2>
+            <p class = "carouselfont">Aenean pulvinar arcu ac elementum sodales. Nunc porttitor dui tellus, at venenatis felis scelerisque eu. Curabitur neque diam, elementum sed elit id, ultricies malesuada augue.</p>
+            <button class = "carouselbutton">LEARN MORE</button>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('img/test2.jpeg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class = "carouselheader">Second Slide</h2>
+            <p class = "carouselfont">Aenean pulvinar arcu ac elementum sodales. Nunc porttitor dui tellus, at venenatis felis scelerisque eu. Curabitur neque diam, elementum sed elit id, ultricies malesuada augue.</p>
+            <button class = "carouselbutton">LEARN MORE</button>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('img/test3.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class = "carouselheader">Third Slide</h2>
+            <p class = "carouselfont">Aenean pulvinar arcu ac elementum sodales. Nunc porttitor dui tellus, at venenatis felis scelerisque eu. Curabitur neque diam, elementum sed elit id, ultricies malesuada augue.</p>
+            <button class = "carouselbutton">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+      <!--
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a> -->
+    </div>
+  </header>
+  <!--End of Carousel -->
+
+  <!-- Page Content -->
+  <div class="columnContainer">
+    <div class="column">
+      <h3>Events</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <p><button class = "navigationbutton">VIEW EVENTS</button></p>
+    </div>
+    <div class="column">
+      <h3>Classes</h3>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla consectetur adipiscing elit. </p>
+      <p><button class = "navigationbutton">FIND CLASSES</button></p>
+    </div>
+    <div class="column">
+      <h3>About </h3>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
+      <p><button class = "navigationbutton">LEARN MORE</button></p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+   <footer>
+
+      <p>RESOURCES | STYLE GUIDE | GITHUB REPOSITORY</p>
+
+
+    <!-- /.container -->
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap core JavaScript for Carousel -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Drop Down Menu Script-->
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
+</body>
+</html>
