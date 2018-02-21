@@ -40,8 +40,9 @@ img#location{
 h1.pageHeader{
   font-size: 32px;
   padding-left: 10px;
-  padding-top:70px;
+  padding-top:80px;
   font-family: 'Montserrat';
+  margin-bottom: 0px;
 }
 
 .carousel-item {
