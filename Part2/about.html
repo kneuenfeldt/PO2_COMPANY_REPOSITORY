@@ -37,58 +37,64 @@
 
 
   <!-- Page Content -->
-  <div class="aboutContainer">
+  <div class="columnContainer">
 
-    <h1 class = "pageHeader"> ABOUT US </h1>
-    <h2 class = "aboutContent"> Magna suspendisse at id commodo lobortis,
-                                suscipit donec vel magna, enim condimentum
-                                consequat est vel ut est.Magna suspendisse at id
-                                commodo lobortis, suscipit donec vel magna, enim condimentum
-                                consequat est vel ut est.
-    </h2>
+    <h1 class = "pageHeader"> About Us </h1>
 
-    <h1 class = "aboutHeader"> MEET THE ARTISTS </h1>
+    <!-- Full Column -->
+    <div class="fullcolumn">
 
-    <div class="imageContainer">
-      <img src="img/placeholder.jpg" class="artist1" style="width:130%;">
-      <h2 class="artistText">Steve Jones</h2>
-      <p class="artistSubtext">Magna suspendisse at id commodo lobortis,
-                              suscipit donec vel magna, enim condimentum
-                              onsequat est vel ut est.
-      </p>
-      <p><a href="Events.html" class = "aboutButton">LEARN MORE</a></p>
+      <p>Magna suspendisse at id commodo lobortis,
+                                  suscipit donec vel magna, enim condimentum
+                                  consequat est vel ut est.Magna suspendisse at id
+                                  commodo lobortis, suscipit donec vel magna, enim condimentum
+                                  consequat est vel ut est.</p>
+    </div>
 
+    <h2 class = "secondaryHeader">Meet the Artist</h2>
+
+      <div class="fullcolumn">
+
+        <div class = "gridimageslink">
+          <a href="index.html">
+          <img class = "gridimages" src="img/placeholder.jpg" alt="HTML tutorial" >
+          </a>
+            <div class = "insideImage">
+              <h3>Bob Doe </h3>
+              <p>Magna suspendisse at id
+              commodo lobortis, suscipit donec vel magna, enim condimentum
+              consequat est vel ut est.</p>
+              <p><a href="Events.html" class = "navigationbutton">Contact</a></p>
+            </div>
+        </div>
 
     </div>
 
-    <div class="imageContainer">
-      <img src="img/placeholder.jpg" class="artist1" style="width:130%;">
-      <h2 class="artistText">Oog Boog the Sloog</h2>
-      <p class="artistSubtext">Magna suspendisse at id commodo lobortis,
-                              suscipit donec vel magna, enim condimentum
-                              onsequat est vel ut est.
-      </p>
-      <p><a href="Events.html" class = "aboutButton">LEARN MORE</a></p>
+    <h2 class = "secondaryHeader">Location</h2>
 
+      <div class="fullcolumn">
 
-
-    </div>
-
-    <div class="imageContainer">
-      <img src="img/placeholder.jpg" class="artist1" style="width:130%;">
-      <h2 class="artistText">Bellatrix Lestrange</h2>
-      <p class="artistSubtext">Magna suspendisse at id commodo lobortis,
-                              suscipit donec vel magna, enim condimentum
-                              onsequat est vel ut est.
-      </p>
-      <p><a href="Events.html" class = "aboutButton">LEARN MORE</a></p>
-
-
+        <div class = "gridimageslink">
+          <a href="index.html">
+          <img class = "gridimages" src="img/googlemaps.jpg" alt="HTML tutorial" >
+          </a>
+            <div class = "insideImage">
+              <h3>Location </h3>
+              <p>bingbong123@gmail.com</p>
+                                      <p class = "contactinfo">
+                                      Company Name<br>
+                                      1234 SIAT Ave <br>
+                                      Surrey, British Columbia, Canada <br>
+                                      V3K 0K7<br>
+                                      (604) 123-4567</p>
+              <p><a href="Events.html" class = "navigationbutton">Contact</a></p>
+            </div>
+        </div>
 
     </div>
 
+    </div>
   </div>
-
 
   <!-- Footer -->
    <footer>
@@ -105,29 +111,15 @@
 
 
 
+  <!-- Drop Down Menu Script-->
+  <script>
+  function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+  }
+  function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+  }
+  </script>
 
-
-
-
-
-
-
-
-
-
-<!-- Bootstrap core JavaScript for Carousel -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Drop Down Menu Script-->
-<script>
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-}
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-}
-</script>
-
-</body>
-</html>
+  </body>
+  </html>

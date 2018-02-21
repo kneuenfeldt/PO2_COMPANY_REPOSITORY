@@ -47,7 +47,7 @@ h1.pageHeader{
   font-size: 32px;
   padding-left: 10px;
   padding-top:80px;
-  padding-bottom:20px;
+  padding-bottom:00px;
   flex-basis: 100%;
   font-family: 'Montserrat';
 }
@@ -87,6 +87,10 @@ h2.aboutContent {
     padding-bottom: 40px;
 }
 
+.artist1{
+  max-width: 100%;
+}
+
 .imageContainer2 {
     position: relative;
     text-align: left;
@@ -113,6 +117,13 @@ h2.artistText2 {
   font-size: 18px;
 }
 
+h2.secondaryHeader{
+  padding-left:10px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+
+}
+
 
 p.artistSubtext {
   position: absolute;
@@ -123,7 +134,7 @@ p.artistSubtext {
 .aboutButton{
   position: absolute;
   bottom:110px;
-  right: -140px;
+  left: 20px;
   background-color: #ffffff;
   color: #5e5e5e;
   font-family: 'Montserrat';
@@ -227,6 +238,16 @@ p.artistSubtext {
   }
 }
 
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
 .columnContainer{
   display: flex;
   flex-wrap: wrap;
@@ -236,9 +257,40 @@ p.artistSubtext {
   padding-bottom: 1em;
   padding-left:15%;
   padding-right:15%;
-
 }
 
+/*Full Colum Grid Structure*/
+
+.columnContainer .fullcolumn {
+  flex-basis: 100%;
+  padding-top: 2em;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.columnContainer .fullcolumn h3 {
+  font-weight: 100;
+  font-size: 28px;
+  font-weight:normal;
+}
+
+.columnContainer .fullcolumn p {
+    font-size: 12px;
+    color: #5e5e5e;
+    padding-bottom: 10px;
+}
+
+.insideImage{
+  position: absolute;
+  text-align: left;
+  width:100%;
+  margin-bottom: 0px;
+  padding: 5px;
+  bottom: 0px;
+  left: 10px;
+}
+
+/*Three column grid structure*/
 .columnContainer .column {
   flex-basis: 33.333%;
   padding-top: 2em;
@@ -246,11 +298,36 @@ p.artistSubtext {
   padding-right: 15px;
 }
 
+.columnContainer .column h3 {
+  font-weight: 100;
+  font-size: 28px;
+  font-weight:normal;
+}
+
+.columnContainer .column p {
+    font-size: 12px;
+    color: #5e5e5e;
+    padding-bottom: 10px;
+}
+
+/*images in 3 column grid*/
+.gridimageslink{
+  width:100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.gridimages{
+  width:100%;
+}
+
+/*Adaptable Grid Structure*/
 @media screen and (max-width: 1000px){
   .columnContainer{
     padding-left:7.5%;
     padding-right:7.5%;
   }
+
 }
 
 @media screen and (max-width: 800px){
@@ -273,20 +350,45 @@ p.artistSubtext {
   flex-wrap: wrap;
   padding-top: 2em;
 }
+  .columnContainer .fullcolumn .contactinfo{
+    display: none
+  }
+
+  .columnContainer .fullcolumn h3{
+    font-size: 16px;
+    font-weight:normal;
+  }
+
+  .columnContainer .fullcolumn p{
+    font-size: 10px;
+    font-weight:normal;
+  }
+
 }
 
-
-.columnContainer .column h3 {
-  font-weight: 100;
-  font-size: 28px;
+@media screen and (max-width: 360px){
+  .columnContainer .column {
+  flex-basis: 100%;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  padding-top: 2em;
 }
+  .columnContainer .fullcolumn .contactinfo{
+    display: none
+  }
 
-.columnContainer .column p {
+  .columnContainer .fullcolumn h3{
     font-size: 12px;
-    color: #5e5e5e;
-    padding-bottom: 10px;
+    font-weight:normal;
+  }
+
+  .columnContainer .fullcolumn p{
+    display: none;
+  }
+
 }
 
+/*Navigation Buttons */
 .navigationbutton{
   background-color: #ffffff;
   color: #5e5e5e;
@@ -307,11 +409,12 @@ p.artistSubtext {
   color: white;
 }
 
+
+/*Text and header that appears in Carousel*/
 .carouselheader{
   text-align: left;
   font-weight: 300;
   font-family: 'Montserrat';
-
 }
 
 .carouselfont{
@@ -319,8 +422,6 @@ p.artistSubtext {
   width:550px;
   font-weight: 100;
   padding-bottom: .5em;
-
-
 }
 
 .carouselbutton{
@@ -344,21 +445,11 @@ p.artistSubtext {
   color: #5e5e5e;
 }
 
-/*--djsjdsjndjds*/
-.eventsimageslink{
-  max-width:100%;
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.eventsimages{
-  max-width:100%;
-
-}
-
+/* Calendar Box */
 .year{
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 0px;
+    margin-top: -7px;
 }
 
 .calendardate{
@@ -370,9 +461,9 @@ p.artistSubtext {
   padding: 5px;
   top: 8px;
   right: 8px;
+
 }
 
 .calendardate p{
-
   margin-bottom: 0px;
 }
