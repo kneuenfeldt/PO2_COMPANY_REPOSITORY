@@ -17,6 +17,7 @@ h1, h2, h3 {
    font-family: 'Montserrat'
 }
 
+
 footer{
   display: block;
   background-color:#C09F80;
@@ -46,9 +47,79 @@ h1.pageHeader{
   font-size: 32px;
   padding-left: 10px;
   padding-top:80px;
+  padding-bottom:20px;
   flex-basis: 100%;
   font-family: 'Montserrat';
-  margin-bottom: 0px;
+}
+
+h1.aboutHeader{
+  font-size: 32px;
+  padding-bottom:20px;
+  flex-basis: 100%;
+  font-family: 'Montserrat';
+  margin-bottom: 20px;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Montserrat';
+  background-color: #ffffff;
+  color:#212121;
+  padding-bottom: 1em;
+  padding-left:15%;
+  padding-right:15%;
+}
+
+h2.aboutContent {
+  font-size: 18px;
+  flex-basis: 100%;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  padding-bottom: 40px;
+  max-width: 1200px;
+}
+
+.imageContainer {
+    position: relative;
+    text-align: left;
+    color: black;
+    padding-bottom: 40px;
+}
+
+h2.artistText {
+  position: absolute;
+  bottom: 120px;
+  left: 60px;
+}
+
+p.artistSubtext {
+  position: absolute;
+  bottom:60px;
+  left: 60px;
+}
+
+.aboutButton{
+  position: absolute;
+  bottom:110px;
+  right: -140px;
+  background-color: #ffffff;
+  color: #5e5e5e;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  border: 2px solid #5e5e5e;
+  box-shadow: inset 0 0 0 0 #5e5e5e;
+  padding:1em;
+  width: 120px;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.aboutButton:hover{
+  box-shadow: inset 120px 0 0 0 #5e5e5e;
+  text-decoration: none;
+  color: white;
 }
 
 .carousel-item {
