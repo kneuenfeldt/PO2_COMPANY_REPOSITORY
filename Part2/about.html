@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>P01 Style Guide</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:1,100,200,300,400,500,600,800" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+  <!--Navigation-->
+  <nav>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <a href="google.ca">
+      <img id = "location" src="img/location_icon.png" alt="HTML tutorial" width ="24" height ="24">
+    </a>
+  </nav>
+
+  <!--Drop Down Menu Elements -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a id = "fadein1" href="#">Events</a>
+      <a href="#">Classes</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+
+
+  <!-- Page Content -->
+  <div class="aboutBody">
+
+    <h1 class = "pageHeader"> About </h1>
+    <h2 class = "aboutContent">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </h2>
+
+    <h1 class = "h1About"> Meet the Artists </h1>
+
+
+
+
+  </div>
+
+  <!-- Footer -->
+   <footer>
+
+      <p>RESOURCES | STYLE GUIDE | GITHUB REPOSITORY</p>
+
+
+    <!-- /.container -->
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap core JavaScript for Carousel -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Drop Down Menu Script-->
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
+</body>
+</html>
