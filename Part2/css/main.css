@@ -1,6 +1,11 @@
+html{
+
+}
+
 body {
     font-family: "Montserrat", Century Gothic, sans-serif;
     margin: 0;
+    min-width:320px;
 }
 
 nav{
@@ -9,6 +14,7 @@ color:white;
 padding: 5px;
 padding-left: 10px;
 z-index: 99;
+display:block;
 position: fixed;
 width: 100%;
 }
@@ -47,7 +53,7 @@ h1.pageHeader{
   font-size: 32px;
   padding-left: 10px;
   padding-top:80px;
-  padding-bottom:00px;
+  margin-bottom: 0px;
   flex-basis: 100%;
   font-family: 'Montserrat';
 }
@@ -60,116 +66,15 @@ h1.aboutHeader{
   margin-bottom: 20px;
 }
 
-.aboutContainer {
-  display: flex;
-  flex-wrap: wrap;
-  font-family: 'Montserrat';
-  background-color: #ffffff;
-  color:#212121;
-  padding-bottom: 1em;
-  padding-left:15%;
-  padding-right:15%;
-}
-
-h2.aboutContent {
-  font-size: 18px;
-  flex-basis: 100%;
-  font-family: 'Montserrat';
-  font-weight: normal;
-  padding-bottom: 20px;
-  max-width: 1200px;
-}
-
-.imageContainer {
-    position: relative;
-    text-align: left;
-    color: black;
-    padding-bottom: 40px;
-}
-
-.artist1{
-  max-width: 100%;
-}
-
-.imageContainer2 {
-    position: relative;
-    text-align: left;
-    color: white;
-    padding-bottom: 40px;
-}
-
-h2.artistText {
-  position: absolute;
-  bottom: 120px;
-  left: 60px;
-}
-
-h1.artistText1 {
-  position: absolute;
-  top: 120px;
-  left: 150px;
-}
-
-h2.artistText2 {
-  position: absolute;
-  top: 200px;
-  left: 150px;
-  font-size: 18px;
-}
 
 h2.secondaryHeader{
   padding-left:10px;
   margin-top: 15px;
   margin-bottom: 0px;
-
+  display: block;
+  width: 100%;
 }
 
-
-p.artistSubtext {
-  position: absolute;
-  bottom:60px;
-  left: 60px;
-}
-
-.aboutButton{
-  position: absolute;
-  bottom:110px;
-  left: 20px;
-  background-color: #ffffff;
-  color: #5e5e5e;
-  font-family: 'Montserrat';
-  font-size: 12px;
-  border: 2px solid #5e5e5e;
-  box-shadow: inset 0 0 0 0 #5e5e5e;
-  padding:1em;
-  width: 120px;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
-}
-
-.aboutButton2{
-  position: absolute;
-  bottom:300px;
-  left: 150px;
-  background-color: #ffffff;
-  color: #5e5e5e;
-  font-family: 'Montserrat';
-  font-size: 12px;
-  border: 2px solid #5e5e5e;
-  box-shadow: inset 0 0 0 0 #5e5e5e;
-  padding:1em;
-  width: 120px;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
-}
-
-.aboutButton:hover{
-  box-shadow: inset 120px 0 0 0 #5e5e5e;
-  text-decoration: none;
-  color: white;
-}
 
 
 
@@ -255,6 +160,7 @@ p.artistSubtext {
   background-color: #ffffff;
   color:#212121;
   padding-bottom: 1em;
+  padding-top: 1em;
   padding-left:15%;
   padding-right:15%;
 }
@@ -263,14 +169,14 @@ p.artistSubtext {
 
 .columnContainer .fullcolumn {
   flex-basis: 100%;
-  padding-top: 2em;
+  padding-top: 1em;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .columnContainer .fullcolumn h3 {
   font-weight: 100;
-  font-size: 28px;
+  font-size: 24px;
   font-weight:normal;
 }
 
@@ -293,14 +199,14 @@ p.artistSubtext {
 /*Three column grid structure*/
 .columnContainer .column {
   flex-basis: 33.333%;
-  padding-top: 2em;
+  padding-top: 1em;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .columnContainer .column h3 {
   font-weight: 100;
-  font-size: 28px;
+  font-size: 24px;
   font-weight:normal;
 }
 
@@ -366,27 +272,9 @@ p.artistSubtext {
 
 }
 
-@media screen and (max-width: 360px){
-  .columnContainer .column {
-  flex-basis: 100%;
-  flex-grow: 0;
-  flex-wrap: wrap;
-  padding-top: 2em;
-}
-  .columnContainer .fullcolumn .contactinfo{
-    display: none
-  }
 
-  .columnContainer .fullcolumn h3{
-    font-size: 12px;
-    font-weight:normal;
-  }
 
-  .columnContainer .fullcolumn p{
-    display: none;
-  }
 
-}
 
 /*Navigation Buttons */
 .navigationbutton{
