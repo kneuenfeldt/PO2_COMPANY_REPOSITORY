@@ -21,7 +21,7 @@
       <img id = "location" src="img/location_icon.png" alt="HTML tutorial" width ="24" height ="24">
     </a>
     <a href="index.html">
-      <img id = "home" src="img/logowhite.png" alt="home" width ="64" height ="48">
+      <img id = "home" src="img/logowhite.png" alt="home" width ="60" height ="40">
     </a>
   </nav>
 
@@ -42,58 +42,41 @@
   <!-- Page Content -->
   <div class="columnContainer">
 
-    <h1 class = "pageHeader"> Contact </h1>
+    <h1 class = "pageHeader"> Contact Us </h1>
 
     <!-- Full Column -->
     <div class="fullcolumn">
 
-        <div class = "gridimageslink">
-          <a href="index.html">
-          <img class = "gridimages" src="img/artist1.jpg" alt="HTML tutorial" >
-          </a>
-            <div class = "insideImage">
-              <h3>Jonathan Bubble</h3>
+      <p>If you have any questions regarding future events, art classes, or want to get in contact with one of our Hive Mind contributors, feel free to leave us a message with you're name and email. We will try and get back to you as soon as possible. Thankyou!  </p>
 
-                                      <p class = "contactinfo">
-                                      Bingbong123@gmail.com<br>
-                                      Company Name<br>
-                                      1234 SIAT Ave <br>
-                                      Surrey, British Columbia, Canada <br>
-                                      V3K 0K7<br>
-                                      (604) 123-4567</p>
-              <p><a href="Events.html" class = "navigationbutton">Contact</a></p>
-            </div>
-        </div>
 
-    </div>
+      <div>
+        <form action="contact.html">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <!-- Full Column -->
-    <div class="fullcolumn">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-        <div class = "gridimageslink">
-          <a href="index.html">
-          <img class = "gridimages" src="img/artist3.jpg" alt="HTML tutorial" >
-          </a>
-            <div class = "insideImage">
-              <h3>Jonathan Bubble</h3>
-                                      <p class = "contactinfo">
-                                      Bingbong123@gmail.com<br>
-                                      Company Name<br>
-                                      1234 SIAT Ave <br>
-                                      Surrey, British Columbia, Canada <br>
-                                      V3K 0K7<br>
-                                      (604) 123-4567</p>
-              <p><a href="Events.html" class = "navigationbutton">Contact</a></p>
-            </div>
-        </div>
+          <label id = "textarealabel" for="country">Your message</label>
+          <textarea></textarea>
 
-    </div>
+          <input type="submit" value="SEND MESSAGE" >
+        </form>
+      </div>
+    </div> <!--End of Full column-->
+
+
+
+
+
+
   </div>
 
   <!-- Footer -->
-   <footer>
+   <footer id = "fullcolumnpagefooter">
 
-      <p><a href="">RESOURCES<a/> | <a href="http://www.sfu.ca/~kneuenfe/IAT_339/PO2/Style_Guide_P02/">STYLE GUIDE</a> | <a href="">GITHUB REPOSITORY</a></p>
+      <p><a href="resources.html">RESOURCES</a> | <a href="http://www.sfu.ca/~kneuenfe/IAT_339/PO2/Style_Guide_P02/">STYLE GUIDE</a> | <a href="https://github.com/kneuenfeldt/PO2_COMPANY_REPOSITORY">GITHUB REPOSITORY</a></p>
 
   </footer>
 
