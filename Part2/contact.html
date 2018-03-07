@@ -74,7 +74,7 @@
     <div class =  "column">
       <div class = "inputfields">
         <form>
-          <input type="submit" value="SEND MESSAGE" >
+          <input type="submit" value="SEND MESSAGE" onclick="myFunction()">
         </form>
       </div>
     </div>
@@ -88,13 +88,16 @@
       <p><a href="resources.html">RESOURCES</a> | <a href="styleguide.html">STYLE GUIDE</a> | <a href="https://github.com/kneuenfeldt/PO2_COMPANY_REPOSITORY">GITHUB REPOSITORY</a></p>
   </footer>
 
-  <!-- Drop Down Menu Script-->
+  <!-- Drop Down Menu Script and Alert if Message sent Sucessfully-->
   <script>
     function openNav() {
         document.getElementById("myNav").style.height = "100%";
     }
     function closeNav() {
         document.getElementById("myNav").style.height = "0%";
+    }
+    function myFunction() {
+      alert("Your message has been sent. We will try to respond within 24 hours.");
     }
   </script>
 
