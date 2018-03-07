@@ -2,7 +2,7 @@
 <html lang = "en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>P01 Style Guide</title>
+<title>P02 HIVEMIND</title>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:1,100,200,300,400,500,600,800" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css">
 
@@ -17,8 +17,8 @@
   <!--Navigation-->
   <nav>
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    <a href="contact.html">
-      <img id = "location" src="img/location_icon.png" alt="HTML tutorial" width ="24" height ="24">
+    <a href="about.html">
+      <img id = "location" src="img/location_icon.png" alt="brokenlink" width ="24" height ="24">
     </a>
     <a href="index.html">
       <img id = "home" src="img/logowhite.png" alt="home" width ="60" height ="40">
@@ -74,7 +74,7 @@
     <div class =  "column">
         <h3  class = "paymentsHeader"> Credit Card Information </h3>
       <div>
-        <form action = "index.html">
+        <form>
           <input type="text" id="cname" name="cardname" placeholder="CARDHOLDER'S NAME">
           <input type="text" id="cnumber" name="cardnumber" placeholder="CARD NUMBER">
           <input type="text" id="expm" name="province" placeholder="Exp Month">
@@ -82,9 +82,29 @@
           <input type="text" id="cvv" name="zipcode" placeholder="CVV">
 
 
-          <input type="submit" value="Submit">
+
         </form>
       </div>
+    </div> <!--End of column-->
+
+    <div class =  "column">
+        <h3  class = "paymentsHeader"> Review Order </h3>
+
+        <p>Ticket Price: $15.00<br>
+        Service Fee: $2.00<br>
+        Quantity: x 1<br>
+        Total: <strong>$17.00</strong>
+        <br>
+        <br>
+        <a href = "mayabasics.html">Edit Order</a>
+        </p>
+
+
+
+
+          <form action="mayabasics.html">
+            <input type="submit" value="Submit" onclick="myFunction()">
+          </form>
     </div> <!--End of column-->
 
 
@@ -117,6 +137,9 @@
   function closeNav() {
       document.getElementById("myNav").style.height = "0%";
   }
+  function myFunction() {
+    alert("Your ticket has been purchased sucessfully. An email with your tickets and receipt have been sent.");
+}
   </script>
 
   </body>

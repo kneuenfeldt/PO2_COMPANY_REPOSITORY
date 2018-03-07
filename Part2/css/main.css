@@ -26,6 +26,8 @@ ul{
   font-size: 14px;
   padding-left: 2em;
   padding-bottom: 1em;
+  color: #5e5e5e;
+  line-height:2em;
 
 }
 
@@ -111,6 +113,28 @@ h1#homepageHeader{
   color: #1a1a1a;
   font-family: 'Montserrat';
 }
+
+h1#pixardemopageHeader{
+  font-size: 32px;
+  padding-left: 10px;
+  padding-top:40px;
+  margin-bottom: 0px;
+  flex-basis: 100%;
+  color: #1a1a1a;
+  font-family: 'Montserrat';
+}
+
+h1#gamejamHeader{
+  font-size: 32px;
+  padding-left: 10px;
+  padding-top:40px;
+  margin-bottom: 0px;
+  flex-basis: 100%;
+  color: #1a1a1a;
+  font-family: 'Montserrat';
+}
+
+
 
 
 h2.secondaryHeader{
@@ -283,6 +307,10 @@ h2.secondaryHeader{
   margin-bottom: 10px;
 }
 
+.gridimageslink #highlightimage{
+  margin-top: 40px;
+}
+
 /*hover effecrs on image links*/
 .gridimageslink a img:hover{
   box-shadow: 0px 0px 10px #888888;
@@ -324,15 +352,6 @@ h2.secondaryHeader{
     margin-bottom: 0;
   }
 
-  h1#homepageHeader{
-    font-size: 32px;
-    padding-left: 10px;
-    padding-top:20px;
-    margin-bottom: 0px;
-    flex-basis: 100%;
-    color: #1a1a1a;
-    font-family: 'Montserrat';
-  }
 
 
 
@@ -429,10 +448,10 @@ h2.secondaryHeader{
 
   padding:1em;
   width: 120px;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
-  margin-bottom: 5em;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  margin-bottom: 4.5em;
 }
 
 .carouselbutton:hover{
@@ -440,6 +459,7 @@ h2.secondaryHeader{
   color: #5e5e5e;
   text-decoration: none;
 }
+
 
 /* Calendar Box */
 .year{
@@ -543,6 +563,7 @@ textarea {
 label{
   font-size: 14px;
   display: block;
+  color:#5e5e5e;
 }
 
 
@@ -572,4 +593,9 @@ width: 49%;
 #cvv{
   display: inline;
   width: 49%;
+}
+
+#ticketnumber{
+  width: 65px;
+  display: block;
 }

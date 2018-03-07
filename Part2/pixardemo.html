@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>P02 HIVEMIND</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:1,100,200,300,400,500,600,800" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+  <!--Navigation-->
+  <nav>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <a href="about.html">
+      <img id = "location" src="img/location_icon.png" alt="brokenlink" width ="24" height ="24">
+    </a>
+    <a href="index.html">
+      <img id = "home" src="img/logowhite.png" alt="home" width ="60" height ="40">
+    </a>
+  </nav>
+
+  <!--Drop Down Menu Elements -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a id = "fadein1" href="Events.html">Events</a>
+      <a href="Classes.html">Classes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="columnContainer">
+
+
+    <!-- Full Column -->
+    <div class="fullcolumn">
+
+      <div class = "gridimageslink">
+
+        <img class = "gridimages" id = "highlightimage" src="img/slide1.jpg" alt="brokenlink" >
+
+      </div>
+    </div>
+
+      <h1 class = "pageHeader" id = "pixardemopageHeader"> PIXAR DEMO </h1>
+
+      <div class="fullcolumn">
+
+      <p>March 25, 2018 | 1:00PM - 4:30PM </p>
+
+      <p>Pixar animator, writer and director, Andrew Coats will be providing insight into the professional animation world through his own personal experiences.</p>
+      <p>Andrew has worked on celebrated films such as Brave and Inside Out. He will also be giving a short animation demo using Autodesk Maya highlighting some animation fundamentals and cornerstones to keep in mind when working on animation projects.</p>
+
+      <ul>
+        <li>You will get a chance to learn and speak with a professional animator.</li>
+        <li>You will get to see an animator at work using popular 3D modeling program Maya. </li>
+        <li>You will have a chance to show off your own portfolio at the end of the demo.</li>
+
+      </ul>
+
+      <p>Best of all, this event is free of charge!</p>
+
+      <h5>Location</h5>
+      <p>HIVEMIND Creative Space<br>1234 SIAT Ave <br>
+      Surrey, British Columbia, Canada <br>
+      V3K 0K7<br>
+      (604) 123-4567</p>
+
+
+  </div>
+
+
+   <div class="column">
+     <a href="Events.html" class="navigationbutton">SEARCH OTHER EVENTS</a>
+   </div>
+
+
+
+
+
+   </div>
+
+  <!-- Footer -->
+   <footer>
+
+      <p><a href="resources.html">RESOURCES</a> | <a href="http://www.sfu.ca/~kneuenfe/IAT_339/PO2/Style_Guide_P02/">STYLE GUIDE</a> | <a href="https://github.com/kneuenfeldt/PO2_COMPANY_REPOSITORY">GITHUB REPOSITORY</a></p>
+
+  </footer>
+
+
+
+
+<!-- Bootstrap core JavaScript for Carousel -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Drop Down Menu and Go Back  Script-->
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+
+</script>
+
+</body>
+</html>

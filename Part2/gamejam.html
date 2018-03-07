@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>P01 Style Guide</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:1,100,200,300,400,500,600,800" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+  <!--Navigation-->
+  <nav>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <a href="about.html">
+      <img id = "location" src="img/location_icon.png" alt="brokenlink" width ="24" height ="24">
+    </a>
+    <a href="index.html">
+      <img id = "home" src="img/logowhite.png" alt="home" width ="60" height ="40">
+    </a>
+  </nav>
+
+  <!--Drop Down Menu Elements -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a id = "fadein1" href="Events.html">Events</a>
+      <a href="Classes.html">Classes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="columnContainer">
+
+
+    <!-- Full Column -->
+    <div class="fullcolumn">
+
+      <div class = "gridimageslink">
+
+        <img class = "gridimages" id = "highlightimage" src="img/gamejam.jpg" alt="brokenlink" >
+
+      </div>
+    </div>
+
+      <h1 class = "pageHeader" id = "gamejamHeader"> HIVEMIND GAME JAM 2018 </h1>
+
+      <div class="fullcolumn">
+
+      <p>April 20-22, 2018 | 12:00 pm Friday - 12:00pm Sunday. </p>
+
+      <p>Hivemind is proud to host our first annual game jam. We invite artists, programmers, and designers to collaborate to create a completed video game using the unity game engine over a 2 day weekend.</p>
+      <p> Come with teams ahead of time or organize teams on site. Teams will compete and be judged by  an experienced panel for a prize. </p>
+
+      <ul>
+        <li>It will be a ton of fun. We promise!</li>
+        <li>You will get to put your knowledge to the test agaisnt other passionate people.</li>
+        <li>This is a great event to make new and bonding friendships</li>
+
+      </ul>
+
+      <p>Best of all, this event is free of charge!</p>
+
+      <h5>Location</h5>
+      <p>HIVEMIND Creative Space<br>1234 SIAT Ave <br>
+      Surrey, British Columbia, Canada <br>
+      V3K 0K7<br>
+      (604) 123-4567</p>
+
+
+  </div>
+
+
+   <div class="column">
+     <a href="Events.html" class="navigationbutton">SEARCH OTHER EVENTS</a>
+   </div>
+
+
+
+
+
+   </div>
+
+  <!-- Footer -->
+   <footer>
+
+      <p><a href="resources.html">RESOURCES</a> | <a href="http://www.sfu.ca/~kneuenfe/IAT_339/PO2/Style_Guide_P02/">STYLE GUIDE</a> | <a href="https://github.com/kneuenfeldt/PO2_COMPANY_REPOSITORY">GITHUB REPOSITORY</a></p>
+
+  </footer>
+
+
+
+
+<!-- Bootstrap core JavaScript for Carousel -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Drop Down Menu and Go Back  Script-->
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+
+</script>
+
+</body>
+</html>
