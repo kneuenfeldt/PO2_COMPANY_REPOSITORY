@@ -57,6 +57,11 @@ footer a:hover{
   color: #33376a;
   font-weight: 600;
 }
+footer a:active{
+  text-decoration: none;
+  color: #33376a;
+  font-weight: 600;
+}
 
 /*Perameters for where Footer should be placed based on screen size*/
 @media screen and (min-height: 800px) and (min-width:801px) {
@@ -413,6 +418,18 @@ h2.secondaryHeader{
   background-color: #5e5e5e;
   text-decoration: none;
   color: white;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+
+.navigationbutton:active{
+  background-color: #5e5e5e;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
 }
 
 
@@ -449,6 +466,15 @@ h2.secondaryHeader{
 
 .carouselbutton:hover{
   background-color: white;
+  color: #5e5e5e;
+  text-decoration: none;
+}
+
+.carouselbutton:active{
+  background-color: white;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
   color: #5e5e5e;
   text-decoration: none;
 }
@@ -521,9 +547,9 @@ input[type=submit]:hover {
 input[type=submit]:active {
   background-color: #E35E61;
   color: white;
-  -webkit-transition: ease-out 0s;
-  -moz-transition: ease-out 0s;
-  transition: ease-out 0s;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
 }
 
 textarea {
