@@ -1,3 +1,4 @@
+/*Main Tag Elements*/
 html{
 
 }
@@ -28,9 +29,7 @@ ul{
   padding-bottom: 1em;
   color: #5e5e5e;
   line-height:2em;
-
 }
-
 
 footer{
   display: block;
@@ -43,6 +42,7 @@ footer{
   text-decoration: none;
 }
 
+/*Footer Elements*/
 footer p{
   margin:0;
 }
@@ -58,6 +58,7 @@ footer a:hover{
   font-weight: 600;
 }
 
+/*Perameters for where Footer should be placed based on screen size*/
 @media screen and (min-height: 800px) and (min-width:801px) {
 footer#gridpagefooter{
   position: fixed;
@@ -74,6 +75,7 @@ footer#fullcolumnpagefooter{
 }
 }
 
+/*Nav Bar image parameters*/
 img#location{
   position: absolute;
     top: 15px;
@@ -86,6 +88,7 @@ img#home{
 
 }
 
+/*Different Header class and id perameters*/
 h1.pageHeader{
   font-size: 32px;
   padding-left: 10px;
@@ -134,9 +137,6 @@ h1#gamejamHeader{
   font-family: 'Montserrat';
 }
 
-
-
-
 h2.secondaryHeader{
   padding-left:10px;
   font-weight: 400;
@@ -146,11 +146,7 @@ h2.secondaryHeader{
   width: 100%;
 }
 
-
-
-
-
-
+/*Carrousel Item Parameters*/
 .carousel-item {
   height: 100vh;
   min-height: 300px;
@@ -161,6 +157,7 @@ h2.secondaryHeader{
   background-size: cover;
 }
 
+/*Drop Down Menu Parameters*/
 .overlay {
     height: 0%;
     width: 100%;
@@ -184,6 +181,7 @@ h2.secondaryHeader{
 
 }
 
+/*Drop Down Menu Link Parameters*/
 .overlay a {
     padding-left: 10px;
     text-decoration: none;
@@ -206,6 +204,7 @@ h2.secondaryHeader{
     font-size: 50px;
 }
 
+/*Changes to drop down menu based on screen size*/
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px}
@@ -226,6 +225,7 @@ h2.secondaryHeader{
   }
 }
 
+/*Column Contain Structure and Parameters*/
 .columnContainer{
   display: flex;
   flex-wrap: wrap;
@@ -238,8 +238,7 @@ h2.secondaryHeader{
   padding-right:15%;
 }
 
-/*Full Colum Grid Structure*/
-
+/*Full Colum Grid Structure and elements within*/
 .columnContainer .fullcolumn {
   width: 100%;
   padding-top: 1em;
@@ -272,8 +271,7 @@ h2.secondaryHeader{
 }
 
 
-
-/*Three column grid structure*/
+/*Three column grid structure and elements within*/
 .columnContainer .column {
   flex-basis: 33.333%;
   padding-top: .5em;
@@ -335,7 +333,6 @@ h2.secondaryHeader{
 }
 
 @media screen and (max-width: 900px){
-
   .columnContainer{
     padding-left:3%;
     padding-right:3%;
@@ -343,7 +340,6 @@ h2.secondaryHeader{
 }
 
   @media screen and (max-width: 800px){
-
     .columnContainer .column {
     flex-basis: 100%;
     flex-grow: 0;
@@ -352,9 +348,7 @@ h2.secondaryHeader{
     margin-bottom: 0;
   }
 
-
-
-
+/*Changes to nav bar if screen under 800px*/
   img#location{
     display: none;
   }
@@ -365,10 +359,9 @@ h2.secondaryHeader{
       right: 6px;
       margin-top:0px;
 
-
-  }
 }
 
+/* Effects to full column based on screen size*/
   .columnContainer .fullcolumn .contactinfo{
     display: none
   }
@@ -386,7 +379,7 @@ h2.secondaryHeader{
   .columnContainer .column p.bottomnavText{
   font-size: 14px;
 }
-
+}
 
 
 
@@ -488,20 +481,7 @@ h2.secondaryHeader{
   color:white;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    font-size: 13px;
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    font-size: 13px;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-    font-size: 13px;
-}
-
-
-
+/*--Input Field Parameters to different elements*/
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -514,8 +494,6 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
-
-
 input[type=submit] {
   background-color:#5e5e5e;
   color: #ffffff;
@@ -527,7 +505,6 @@ input[type=submit] {
   -webkit-transition: ease-out 0.2s;
   -moz-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
-
   margin-bottom: 40px;
 }
 
@@ -557,7 +534,6 @@ textarea {
     border: 1px solid #ccc;
     background-color: #ffffff;
     font-size: 16px;
-
 }
 
 label{
@@ -566,18 +542,26 @@ label{
   color:#5e5e5e;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 13px;
+}
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 13px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 13px;
+}
 
 #province{
 display: inline;
 width: 49%;
-
 }
 
 #zipcode{
   display: inline;
   width: 49%;
-
 }
 
 #expm{

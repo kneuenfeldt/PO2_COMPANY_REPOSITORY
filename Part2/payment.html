@@ -53,7 +53,7 @@
 
 
 
-
+    <!--Column1of3 showing Billing Info-->
     <div class =  "column">
         <h3 class = "paymentsHeader"> Billing Information </h3>
       <div>
@@ -71,6 +71,7 @@
       </div>
     </div> <!--End of column-->
 
+    <!--Column2of3 showing Credit Card Info-->
     <div class =  "column">
         <h3  class = "paymentsHeader"> Credit Card Information </h3>
       <div>
@@ -80,13 +81,11 @@
           <input type="text" id="expm" name="province" placeholder="Exp Month">
           <input type="text" id="expy" name="zipcode" placeholder="Exp Year">
           <input type="text" id="cvv" name="zipcode" placeholder="CVV">
-
-
-
         </form>
       </div>
     </div> <!--End of column-->
 
+    <!--Column3of3 showing Review Info-->
     <div class =  "column">
         <h3  class = "paymentsHeader"> Review Order </h3>
 
@@ -99,38 +98,21 @@
         <a href = "mayabasics.html">Edit Order</a>
         </p>
 
-
-
-
           <form action="mayabasics.html">
             <input type="submit" value="Submit" onclick="myFunction()">
           </form>
     </div> <!--End of column-->
 
-
-
-
-
-
   </div>
+  <!--End of Page Content-->
 
   <!-- Footer -->
    <footer id = "fullcolumnpagefooter">
-
       <p><a href="resources.html">RESOURCES</a> | <a href="styleguide.html">STYLE GUIDE</a> | <a href="https://github.com/kneuenfeldt/PO2_COMPANY_REPOSITORY">GITHUB REPOSITORY</a></p>
-
   </footer>
 
-
-
-
-
-
-
-
-
-  <!-- Drop Down Menu Script-->
-  <script>
+<!-- Drop Down Menu Script and Payment Alert-->
+<script>
   function openNav() {
       document.getElementById("myNav").style.height = "100%";
   }
@@ -139,7 +121,7 @@
   }
   function myFunction() {
     alert("Your ticket has been purchased sucessfully. An email with your tickets and receipt have been sent.");
-}
+  }
   </script>
 
   </body>
