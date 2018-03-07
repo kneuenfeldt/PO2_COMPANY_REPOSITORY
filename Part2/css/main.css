@@ -18,8 +18,15 @@ position: fixed;
 width: 100%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4{
    font-family: 'Montserrat'
+}
+
+ul{
+  font-size: 14px;
+  padding-left: 2em;
+  padding-bottom: 1em;
+
 }
 
 
@@ -95,6 +102,16 @@ h1.aboutHeader{
   margin-bottom: 20px;
 }
 
+h1#homepageHeader{
+  font-size: 32px;
+  padding-left: 10px;
+  padding-top:40px;
+  margin-bottom: 0px;
+  flex-basis: 100%;
+  color: #1a1a1a;
+  font-family: 'Montserrat';
+}
+
 
 h2.secondaryHeader{
   padding-left:10px;
@@ -104,6 +121,8 @@ h2.secondaryHeader{
   display: block;
   width: 100%;
 }
+
+
 
 
 
@@ -198,7 +217,7 @@ h2.secondaryHeader{
 /*Full Colum Grid Structure*/
 
 .columnContainer .fullcolumn {
-
+  width: 100%;
   padding-top: 1em;
   padding-left: 15px;
   padding-right: 15px;
@@ -211,7 +230,7 @@ h2.secondaryHeader{
 }
 
 .columnContainer .fullcolumn p {
-    font-size: 16px;
+    font-size: 14px;
     color: #5e5e5e;
     font-weight: 400;
     padding-bottom: 10px;
@@ -244,6 +263,13 @@ h2.secondaryHeader{
   font-weight:normal;
 }
 
+.columnContainer .column h3.paymentsHeader{
+  font-size: 18px;
+  padding-bottom: 10px;
+  padding-top:30px;
+  font-weight: 500;
+}
+
 .columnContainer .column p {
     font-size: 12px;
     color: #5e5e5e;
@@ -258,12 +284,12 @@ h2.secondaryHeader{
 }
 
 /*hover effecrs on image links*/
-.gridimages:hover{
+.gridimageslink a img:hover{
   box-shadow: 0px 0px 10px #888888;
 }
 
 /*hover effecrs on image links*/
-.gridimages:active{
+.gridimageslink a:active{
   box-shadow: 0px 0px 10px #888888;
 }
 
@@ -281,21 +307,34 @@ h2.secondaryHeader{
 }
 
 @media screen and (max-width: 900px){
-  .columnContainer .column {
 
-  }
   .columnContainer{
     padding-left:3%;
     padding-right:3%;
   }
+}
 
   @media screen and (max-width: 800px){
+
     .columnContainer .column {
     flex-basis: 100%;
     flex-grow: 0;
     flex-wrap: wrap;
-    padding-top: 2em;
+    padding-top: 0;
+    margin-bottom: 0;
   }
+
+  h1#homepageHeader{
+    font-size: 32px;
+    padding-left: 10px;
+    padding-top:20px;
+    margin-bottom: 0px;
+    flex-basis: 100%;
+    color: #1a1a1a;
+    font-family: 'Montserrat';
+  }
+
+
 
   img#location{
     display: none;
@@ -321,36 +360,49 @@ h2.secondaryHeader{
   }
 
   .columnContainer .fullcolumn p{
-    font-size: 16px;
+    font-size: 15px;
     font-weight:normal;
   }
 
+  .columnContainer .column p.bottomnavText{
+  font-size: 14px;
 }
+
+
 
 
 
 
 
 /*Navigation Buttons */
+
+
 .navigationbutton{
   background-color: #ffffff;
+  display: inline-block;
+
   color: #5e5e5e;
   font-family: 'Montserrat';
   font-size: 12px;
   border: 2px solid #5e5e5e;
-  box-shadow: inset 0 0 0 0 #5e5e5e;
   padding:1em;
-
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
   -webkit-transition: ease-out 0.2s;
   -moz-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
+  margin-bottom: 2em;
+
 }
 
 .navigationbutton:hover{
-  box-shadow: inset 120px 0 0 0 #5e5e5e;
+  background-color: #5e5e5e;
   text-decoration: none;
   color: white;
 }
+
 
 
 /*Text and header that appears in Carousel*/
@@ -415,10 +467,24 @@ h2.secondaryHeader{
   color:white;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 13px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 13px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 13px;
+}
+
+
 
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
+    font-size: 14px;
     margin-top: 0px;
     margin-bottom: 20px;
     display: inline-block;
@@ -427,30 +493,39 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
+
+
 input[type=submit] {
-  background-color: #ffffff;
-  color: #5e5e5e;
+  background-color:#5e5e5e;
+  color: #ffffff;
   font-family: 'Montserrat';
   font-size: 14px;
-  border: 2px solid #5e5e5e;
-  box-shadow: inset 0 0 0 0 #5e5e5e;
   padding:1em;
-  width: 200px;
+  width: 100%;
+  border: 0px;
   -webkit-transition: ease-out 0.2s;
   -moz-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
-  margin-top:20px;
+
+  margin-bottom: 40px;
+}
+
+.inputfields{
+  width:100%;
 }
 
 input[type=submit]:hover {
-  box-shadow: inset 200px 0 0 0 #5e5e5e;
+  background-color: #E35E61;
   text-decoration: none;
   color: white;
 }
 
 input[type=submit]:active {
-  background-color: #5e5e5e;
+  background-color: #E35E61;
   color: white;
+  -webkit-transition: ease-out 0s;
+  -moz-transition: ease-out 0s;
+  transition: ease-out 0s;
 }
 
 textarea {
@@ -461,9 +536,39 @@ textarea {
     border: 1px solid #ccc;
     background-color: #ffffff;
     font-size: 16px;
-    resize: none;
+
 }
 
 label{
   font-size: 14px;
+  display: block;
+}
+
+
+
+#province{
+display: inline;
+width: 49%;
+
+}
+
+#zipcode{
+  display: inline;
+  width: 49%;
+
+}
+
+#expm{
+  display: inline;
+  width: 49%;
+}
+
+#expy{
+  display: inline;
+  width: 49%;
+}
+
+#cvv{
+  display: inline;
+  width: 49%;
 }

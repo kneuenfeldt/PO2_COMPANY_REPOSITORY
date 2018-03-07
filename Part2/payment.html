@@ -42,37 +42,49 @@
   <!-- Page Content -->
   <div class="columnContainer">
 
-    <h1 class = "pageHeader"> Contact Us </h1>
+    <h1 class = "pageHeader"> Payment Method </h1>
 
     <!-- Full Column -->
     <div class="fullcolumn">
 
-      <p>If you have any questions regarding future events, art classes, or want to get in contact with one of our Hive Mind contributors, feel free to leave us a message with you're name and email. We will try and get back to you as soon as possible. Thankyou!  </p>
-
-    </div> <!--End of Full column-->
-    <div class="column">
-
-        <form>
-
-          <input type="text" id="fname" name="firstname" placeholder="FULL NAME">
-
-
-          <input type="text" id="lname" name="lastname" placeholder="EMAIL">
-        </form>
+        <p>To complete the purchase of your ticket(s), please fill out all the required credit card and billing information below.</p>
 
     </div>
 
-    <div class="fullcolumn">
-        <form>
-          <label id = "textarealabel" for="country">Your Message:</label>
-          <textarea></textarea>
-        </form>
-    </div>
+
+
 
     <div class =  "column">
-      <div class = "inputfields">
+        <h3 class = "paymentsHeader"> Billing Information </h3>
+      <div>
         <form>
-          <input type="submit" value="SEND MESSAGE" >
+          <input type="text" id="fname" name="fulltname" placeholder="FULL NAME...">
+          <input type="text" id="baddress" name="badress" placeholder="BILLING ADDRESS...">
+          <input type="text" id="city" name="cityname" placeholder="CITY...">
+          <input type="text" id="province" name="province" placeholder="PROVINCE">
+          <input type="text" id="zipcode" name="zipcode" placeholder="ZIP">
+          <input type="text" id="country" name="country" placeholder="COUNTRY">
+          <input type="text" id="email" name="emailadress" placeholder="EMAIL ADDRESS...">
+
+
+        </form>
+      </div>
+    </div> <!--End of column-->
+
+    <div class =  "column">
+        <h3  class = "paymentsHeader"> Credit Card Information </h3>
+      <div>
+        <form>
+
+
+          <input type="text" id="cname" name="cardname" placeholder="CARDHOLDER'S NAME">
+          <input type="text" id="cnumber" name="cardnumber" placeholder="CARD NUMBER">
+          <input type="text" id="expm" name="province" placeholder="Exp Month">
+          <input type="text" id="expy" name="zipcode" placeholder="Exp Year">
+          <input type="text" id="cvv" name="zipcode" placeholder="CVV">
+
+
+          <input type="submit" value="Submit">
         </form>
       </div>
     </div> <!--End of column-->
